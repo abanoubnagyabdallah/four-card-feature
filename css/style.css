@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: var(--VeryLightGray-color);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --Red-color: hsl(0, 78%, 62%);
+    --Cyan-color: hsl(180, 62%, 55%);
+    --Orange-color: hsl(34, 97%, 64%);
+    --Blue-color: hsl(212, 86%, 64%);
+
+    --VeryDarkBlue-color: hsl(234, 12%, 34%);
+    --GrayishBlue-color: hsl(229, 6%, 66%);
+    --VeryLightGray-color: hsl(0, 0%, 98%);
+}
+.container{
+    margin-right:auto ;
+    margin-left:auto ;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+/* end global rules */
+.container .Reliable{
+    font-weight: 200;
+    font-size: 30px;
+    color: var(--VeryDarkBlue-color);
+}
+.container .Powered{
+    color: var(--VeryDarkBlue-color);
+    font-size: 30px;
+}
+.container p{
+    color: var(--GrayishBlue-color);
+    font-size: 15px;
+}
+.first-p{
+    text-align: center;
+    margin-top: 15px;
+    white-space: pre-wrap;
+}
+.header{
+    text-align: center;
+    margin: 50px 0px;
+    
+}
+.head-one{
+    white-space: nowrap;
+}
+@media (max-width:767px){
+    .container .Reliable{
+        font-size: 25px;
+    }
+    .container .Powered{
+        font-size: 25px;
+    }
+    .first-p{
+        text-align: center;
+        margin-top: 15px;
+        white-space:normal;
+    }
+}
+.container .box{
+    position: relative;
+    background-color: #fff;
+    border-top: 3.5px solid ;
+    margin: 18px auto;
+    padding: 30px;
+    width: 300px;
+    height: 200px;
+    box-shadow:5px 5px 10px var(--GrayishBlue-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.container .box h4{
+    color: var(--VeryDarkBlue-color);
+    margin-bottom: 10px;
+}
+.container .box p{
+    font-size: 10px;
+    line-height: 2;
+}
+.box img{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    padding: 15px;
+}
+@media (min-width:768px){
+    .box-container{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.box-container .one{
+    border-color: hsl(180, 62%, 55%);
+}
+.box-container .two{
+    border-color: hsl(0, 78%, 62%);
+}
+.box-container .three{
+    border-color: hsl(34, 97%, 64%);
+}
+.box-container .four{
+    border-color: hsl(212, 86%, 64%);
+}
